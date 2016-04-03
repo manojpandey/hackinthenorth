@@ -1,0 +1,38 @@
+html {
+	height: 100%;
+	width: 100%;
+}
+
+#intro {
+	height: 900px;
+	width: 100%;
+}
+
+.intro-body {
+	height: 100%;
+	width: 100%;
+}
+
+.intro-left {
+	height: 900px;
+}
+
+.intro-right {
+	height: 900px;
+	overflow-y: scroll; 
+}
+
+.left-upper {
+	height: 400px;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.left-bottom {
+	height: 362px;
+	border-right: 1px solid black;
+}
+
+.right-upper, .right-mid, .right-bottom {
+	padding: 40px;
+}
