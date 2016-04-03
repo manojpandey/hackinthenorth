@@ -5,7 +5,7 @@ import datetime
 
 from close_n import best_match
 
-face_cascade = cv2.CascadeClassifier('./haarcascade_frontalface_default.xml')
+face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 # face_cascade = cv2.CascadeClassifier('./haarcascade_profileface.xml')
 
 cap = cv2.VideoCapture(0)
@@ -29,13 +29,13 @@ while True:
             roi_color = copy.deepcopy(frame[y:y + h, x:x + w])
 
             ij = cv2.resize(roi_color, (100, 100))
-            res, qal = best_match(ij)
-            if 'img' in res:
-                v = 'manoj'
-            else:
-                v = 'akul'
+            # res, qal = best_match(ij)
+            # if 'img' in res:
+            #     v = 'manoj'
+            # else:
+            #     v = 'akul'
 
-            print v, datetime.datetime.now()
+            # print v, datetime.datetime.now()
 
             d[y:y + h, x:x + w] += frame[y:y + h, x:x + w]
             if n >= 5:

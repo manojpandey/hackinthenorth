@@ -17,6 +17,7 @@ n_frames = 0
 while True:
     n_frames += 1
     ret, frame = cap.read()
+    # print ret, frame
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
     if n_frames % 10 == 0:
@@ -29,11 +30,11 @@ while True:
             roi_color = copy.deepcopy(frame[y:y + h, x:x + w])
 
             ij = cv2.resize(roi_color, (100, 100))
-            res, qal = best_match(ij)
-            if 'img' in res:
-                v = 'manoj'
-            else:
-                v = 'laksh'
+            # res, qal = best_match(ij)
+            # if 'img' in res:
+                # v = 'laksh'
+            # else:
+                # v = 'manoj'
 
             # print v, datetime.datetime.now()
 
@@ -49,7 +50,7 @@ while True:
             # 47-49
 
             # if i >= 100:
-                # i = 0
+            # i = 0
             cv2.imshow('face_crop', roi_color)
 
     cv2.imshow('frame', frame)
