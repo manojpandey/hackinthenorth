@@ -12,11 +12,11 @@ setup(
   keywords = ['wolframalpha', 'command-line', 'terminal', 'query'], # arbitrary keywords
   classifiers = [],
   entry_points={
-        'console_scripts': [
-            'wol = wol.wol:wol_cli',
-        ]
+    'console_scripts': [
+      'wol = wol.wol:wol_cli',
+    ]
     },
-    install_requires=[
-        'wolframalpha'
-    ],
+  install_requires=[
+    'wolframalpha'
+  ],
 )
