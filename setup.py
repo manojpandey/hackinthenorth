@@ -3,7 +3,7 @@ from distutils.core import setup
 setup(
   name = 'wol',
   packages = ['wol'], # this must be the same as the name above
-  version = '0.1',
+  version = '0.2',
   description = 'instant query from wolframalpha',
   author = 'Manoj Pandey, Laksh Arora, Akul Mehra',
   author_email = 'manojpandey1996@gmail.com, laksharora28@gmail,com, mehra.akul@gmail.com',
